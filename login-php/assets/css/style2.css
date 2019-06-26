@@ -1,0 +1,16 @@
+header{
+
+	font-family: 'Roboto', sans-serif;
+	text-align: center; 
+ background-color: #1f618d;
+
+}
+header a{
+ text: #fff;
+
+}
+//*header img{
+ min-width:100px;
+ max-width:150px;
+ padding: 0;
+ border:1px solid;

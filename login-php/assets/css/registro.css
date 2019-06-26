@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #c39bd3;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+	font-size: 50px;
+	line-height: 50px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows:    repeat(3,auto);
+	grid-template-areas: "header 		header 		header"
+						 "form          form        form"
+	                     "footer 		footer 		footer";
+						
+}
+.contenedor .header{
+	background: #f19484;
+	margin-top: 20px;
+	grid-column-start: header;
+	grid-column-end: header;
+}
+.header h1{
+	font-size: 50px;
+	text-align: center;
+	padding: 20px 0;
+	color:dimgray;
+	font-weight: bold;
+}
+
+.header h3{
+	font-size: 25px;
+	text-align: center;
+	color:dimgray;
+	font-weight: bold;
+}
+
+.contenedor .form{
+	width: 600px;
+	justify-self: center;
+	align-self: center;
+	grid-area: form;
+}
+.form .formularioLogin img{
+	text-align: center;
+  	width: 150px;
+  	margin: 5px;
+}
+
+.form .formularioLogin {
+	width: 600px;
+	font-size: 18px;
+	margin: 10px;
+	padding: 10px;
+	background: white;
+	color: #1f618d;
+}
+.inputNombre, .inputApellido, .inputFechaNac,
+.inputDire, .inputNro, .inputPiso, .inputDepto,
+.inputCP, .inputCel, .inputEmail, .inputNombreUs,
+.inputContras, .inputContras2, .inputRel{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	background:#1f618d;
+	color: #7da4bd;
+}
+::placeholder{
+	background:#1f618d;
+	color: #7da4bd;
+	width: 250px;
+	font-size: 18px;
+}
+.formularioLogin a{
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: #7d3c98;
+	text-decoration: none;
+	margin: 5px;
+}
+.boton{
+	/*display: inline-block;
+	text-align: center;*/
+	display: inline-block;
+	width: 150px;
+	justify-self: stretch;
+	align-self: stretch;
+	/*background: linear-gradient(50grad, #1f618d,#f19484);*/
+	background: #1f618d;
+	/*padding: 10px 20px;*/
+	margin: auto;
+	text-align: center;
+	color: #7da4bd;
+	font-size: 18px;
+	font-weight: bold;
+	/*margin-top: 3px;*/
+	text-transform: uppercase;
+	letter-spacing: 2px:;
+	border-radius: 10px;
+	border: 1px solid #7da4bd;
+	transition: all 300ms;
+}
+
+.boton:hover{
+	transform: translateY(5px);
+	box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+}
+
+.contenedor .footer{
+	background: #f19484;
+	color: dimgray;
+	grid-area: footer;
+}
+h6{
+	font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+
+	.contenedor{
+	width: 90%;
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	font-size: 50px;
+	line-height: 50px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3,auto);
+		grid-template-areas: 
+							"header "
+							"form "
+							"footer ";
+	}	
+}

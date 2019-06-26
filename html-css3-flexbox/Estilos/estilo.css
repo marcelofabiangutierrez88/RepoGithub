@@ -1,0 +1,112 @@
+*{
+    margin: 10px;
+    padding:10px;
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: "montserrat", sans-serif;
+}
+a{
+         text-decoration: none;
+
+}
+.padre{
+ display: flex;
+ flex-flow: column nowrap;
+
+}
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;}
+.menu{
+     background: rgba(0,0,0,.1);
+     display: flex;
+     flex-flow: row nowrap;
+    height: 100px; 
+    align-items: center;
+} 
+.logo{
+        flex:1 1 auto;
+}
+.logo a{
+            color:#fff;
+
+}
+.nav{
+        flex:5 1 auto;
+}
+.social{
+        flex:1 1 auto;
+
+}
+
+.texto-principal{
+ background: #00b7a8;
+}
+ h1{
+    background: #f0eec8;
+}
+.section{
+        background: #000;
+        display: flex;
+
+}
+.articulos{
+    background: #616f39;
+    flex:2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.article{
+    background: #ffd98e;
+        flex:1 1 40%;
+
+}
+.navegacion{
+    background: #ffb677;
+        flex:1 1 100%;
+
+}
+.aside{
+    background: #ff8364;
+    flex:1 1 auto;
+}
+.publicidad{
+    background: #240041;
+}
+.footer{
+        background: #000;
+    display: flex;
+        justify-content: center;
+
+}
+.pie{
+    background: #900048;
+    width: 300px;
+}
+@media all and(max-width:800px){
+    .sectionm{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    
+}
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and(max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+@media all and(max-width:400px){
+    .aside{
+        flex-direction: column;
+    }
+}
